@@ -47,7 +47,7 @@ func TestDataFileWriter(t *testing.T) {
 
 	// now make sure we can decode again
 	datumReader := NewSpecificDatumReader()
-	dfr, err := newDataFileReaderBytes(encoded, datumReader)
+	dfr, err := NewDataFileReaderBytes(encoded, datumReader)
 	if err != nil {
 		t.Fatal(err)
 	}
